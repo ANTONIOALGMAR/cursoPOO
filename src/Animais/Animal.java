@@ -1,6 +1,6 @@
 package Animais;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     protected String cor;
     protected int altura;
@@ -56,7 +56,5 @@ public class Animal {
 
     protected void comer (){}
     protected void dormir(){}
-    public void soar() {
-        System.out.println("cri cri");
-    }
+    public abstract void soar();  // abstract nao tem {}
 }
