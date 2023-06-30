@@ -1,6 +1,7 @@
 import Animais.Cachorro;
 import Animais.Gato;
 import Animais.Passaro;
+import Lojas.Petshop;
 
 public class Main {
 
@@ -14,5 +15,18 @@ public class Main {
         cachorro1.soar();
         gato1.soar();
         passaro1.soar();
+
+        System.out.println("*********************");
+
+        Petshop petshop = new Petshop();
+
+        petshop.darBanho(cachorro1);
+        System.out.println(cachorro1.getEstadoDeEspirito());
+
+        petshop.darBanho(gato1);
+        System.out.println(gato1.getEstadoDeEspirito());
+
+        petshop.tosar(cachorro1);
+        System.out.println(cachorro1.getEstadoDeEspirito());
     }
 }
